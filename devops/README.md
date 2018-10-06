@@ -14,3 +14,10 @@ MODEL_PACKAGE=my_model.zip
 VERSION=0.9-SNAPSHOT
 curl -v -u ${admin_user}:${admin_password} --upload-file ${MODEL_PACKAGE} https://nexuscimgmt.sgp.dbs.com:8443/nexus/repository/ACOE/com/dbs/${MODEL}/${VERSION}/${MODEL}-${VERSION}.zip
 ```
+
+## BASH
+
+### passwordless ssh
+```
+ssh -oStrictHostKeyChecking=no -i ${KEYFILE} ${REMOTE_SERVER} "${COMMAND_TO_EXECUTE_REMOTELY}"
+```
