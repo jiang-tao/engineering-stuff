@@ -1,14 +1,66 @@
 # DevOps Stuff
 
-## Artifact repos
+## Build
 
-### Nexus3
+### Java
 
-#### API to upload to a nexus3 maven repo
+<WIP>
+
+### Python
+
+<WIP>
+
+
+## Test
+
+### Java
+<WIP>
+
+### Python
+<WIP>
+
+
+## Test
+### Java
+<WIP>
+
+
+### Python
+<WIP>
+
+## Code Quality
+### Java
+<WIP>
+
+### Python
+<WIP>
+
+## Packaging and Publishing
+
+### Java
+<WIP>
+
+### Python
+<WIP>
+
+## GIT
+### Dev Git Config for Enterprise Proxy
+
+git config --global http.proxyAuthMethod 'basic'
+git config --global http.sslVerify false
+git config --global https.sslVerify false
+git config --global http.proxy http://user:pass@yourproxy:port
+git config --global https.proxy http://user:pass@yourproxy:port
+
+
+## Nexus3
+
+### API to publishing artifact
 
 To upload a ML model with particular version
 
 ```
+REPOSITORY=ADA_MLE
 MODEL=my_model
 MODEL_PACKAGE=my_model.zip
 VERSION=0.9-SNAPSHOT
